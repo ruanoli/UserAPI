@@ -1,0 +1,90 @@
+[
+  {
+    "ContainingType": "UserAPI.Services.Controllers.UserController",
+    "Method": "CreateAccount",
+    "RelativePath": "api/User/createAccount",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UserAPI.Services.Models.CreateAccountRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserAPI.Services.Models.CreateAccountResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 201
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserAPI.Services.Controllers.UserController",
+    "Method": "RecoverPassword",
+    "RelativePath": "api/User/recoverPassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UserAPI.Services.Models.RecoverPasswordRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserAPI.Services.Models.RecoverPasswordResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UserAPI.Services.Controllers.UserController",
+    "Method": "UpdateData",
+    "RelativePath": "api/User/updateData",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UserAPI.Services.Controllers.UserController",
+    "Method": "Authentication",
+    "RelativePath": "api/User/userAuthentication",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UserAPI.Services.Models.AuthenticateRequestModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "UserAPI.Services.Models.AuthenticateResponseModel",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]
