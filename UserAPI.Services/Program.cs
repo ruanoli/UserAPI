@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore;
+using UserAPI.Infra.Context;
 using UserAPI.Services.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -5,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddRouting(x => x.LowercaseQueryStrings = true);
+builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 SwaggerConfiguration.Configure(builder);
 

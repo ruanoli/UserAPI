@@ -68,7 +68,7 @@ namespace UserAPI.Services.Controllers
                         AccessDate = DateTime.Now,
                         AccessToken = _tokenSecurity.CreateToken(model.Email)
                     };
-
+                        
                     return StatusCode(200, response);
                 }
                 else

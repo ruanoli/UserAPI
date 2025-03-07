@@ -1,0 +1,12 @@
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\bin\Debug\net8.0\UserAPI.Domain.deps.json
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\bin\Debug\net8.0\UserAPI.Domain.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\bin\Debug\net8.0\UserAPI.Domain.pdb
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.AssemblyInfoInputs.cache
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.AssemblyInfo.cs
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.csproj.CoreCompileInputs.cache
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.sourcelink.json
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\refint\UserAPI.Domain.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\UserAPI.Domain.pdb
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Domain\obj\Debug\net8.0\ref\UserAPI.Domain.dll
