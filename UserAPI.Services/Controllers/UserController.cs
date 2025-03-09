@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using UserAPI.Domain.Interfaces.Repositories;
+using UserAPI.Domain.Interfaces.Services;
 using UserAPI.Services.Models;
 using UserAPI.Services.Security;
 using UserAPI.Services.Settings;
@@ -15,12 +17,16 @@ namespace UserAPI.Services.Controllers
     {
         private readonly IOptions<JwtSettings> _jwtSettings;
         private readonly TokenSecurity _tokenSecurity;
+        private readonly IUserDomainService _userDomainService;
 
-        public UserController(IOptions<JwtSettings> jwtSettings, TokenSecurity tokenSecurity)
+        public UserController(IOptions<JwtSettings> jwtSettings, TokenSecurity tokenSecurity, IUserDomainService userDomainService)
         {
             _jwtSettings = jwtSettings;
             _tokenSecurity = tokenSecurity;
+            _userDomainService = userDomainService;
         }
+
+
 
         [Route("createAccount")]
         [HttpPost]
