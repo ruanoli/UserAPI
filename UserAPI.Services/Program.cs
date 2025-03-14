@@ -10,11 +10,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddRouting(x => x.LowercaseQueryStrings = true);
 builder.Services.AddDbContext<AppDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-builder.Services.AddTransient<IUserRepository, UserRepository>();
 
 SwaggerConfiguration.Configure(builder);
-
 JwtConfiguration.Configure(builder);
+DependencyInjectionConfiguration.Configure(builder);
 
 var app = builder.Build();
 

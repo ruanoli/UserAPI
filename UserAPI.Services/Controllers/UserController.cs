@@ -2,9 +2,12 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using UserAPI.Application.Interfaces;
+using UserAPI.Application.Models;
+using UserAPI.Domain.Exceptions;
 using UserAPI.Domain.Interfaces.Repositories;
 using UserAPI.Domain.Interfaces.Services;
-using UserAPI.Services.Models;
+using UserAPI.Services.Configurations;
 using UserAPI.Services.Security;
 using UserAPI.Services.Settings;
 
@@ -17,13 +20,13 @@ namespace UserAPI.Services.Controllers
     {
         private readonly IOptions<JwtSettings> _jwtSettings;
         private readonly TokenSecurity _tokenSecurity;
-        private readonly IUserDomainService _userDomainService;
+        private readonly IUserAppService _userAppService;
 
-        public UserController(IOptions<JwtSettings> jwtSettings, TokenSecurity tokenSecurity, IUserDomainService userDomainService)
+        public UserController(IOptions<JwtSettings> jwtSettings, TokenSecurity tokenSecurity, IUserAppService userAppService)
         {
             _jwtSettings = jwtSettings;
             _tokenSecurity = tokenSecurity;
-            _userDomainService = userDomainService;
+            _userAppService = userAppService;
         }
 
 
@@ -35,22 +38,19 @@ namespace UserAPI.Services.Controllers
         {
             try
             {
-                var createAccount = new CreateAccountResponseModel()
-                {
-                    Id = Guid.NewGuid(),
-                    Name = model.Name,
-                    AccessDate = DateTime.UtcNow,
-                    DateTimeExpiration = DateTime.UtcNow,
-                    Email = model.Email,
-                    AccessToken = ""
-                };
 
-                return StatusCode(200);
+                var response = _userAppService.CreateAccount(model);
+
+                return StatusCode(200, response);
             }
-            catch (Exception)
+            catch (UserAlreadyRegistredException ex)
+            {
+                return StatusCode(400, new { message = ex.Message });
+            }
+            catch (Exception ex)
             {
 
-                return StatusCode(500);
+                return StatusCode(500, new { message = ex.Message });
             }
 
 
@@ -63,24 +63,16 @@ namespace UserAPI.Services.Controllers
         {
             try
             {
-                if("admintest@test.com".Equals(model.Email) && "@Admin12345".Equals(model.Password))
-                {
-                    var response = new AuthenticateResponseModel()
-                    {
-                        Id = Guid.NewGuid(),
-                        DateTimeExpiration = DateTime.Now.AddHours(_jwtSettings.Value.ExpirationInHours),
-                        Email = model.Email,
-                        Name = "User ADM",
-                        AccessDate = DateTime.Now,
-                        AccessToken = _tokenSecurity.CreateToken(model.Email)
-                    };
-                        
-                    return StatusCode(200, response);
-                }
-                else
-                {
-                    return StatusCode(401);
-                }
+                var response = _userAppService.Authenticate(model);
+                response.AccessToken = _tokenSecurity.CreateToken(model.Email);
+                response.DateTimeExpiration = DateTime.Now.AddHours(_jwtSettings.Value.ExpirationInHours);
+
+                return StatusCode(200, response);
+
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                return StatusCode(401, new { message = ex.Message });
             }
             catch (Exception ex)
             {
@@ -95,7 +87,23 @@ namespace UserAPI.Services.Controllers
         [ProducesResponseType(typeof(RecoverPasswordResponseModel), 200)]
         public IActionResult RecoverPassword(RecoverPasswordRequestModel model)
         {
-            return StatusCode(200);
+            try
+            {
+                var response = _userAppService.RecoverPassword(model);
+
+                return StatusCode(200, response);
+
+            }
+            catch (UserNotFoundException ex)
+            {
+                return StatusCode(404, new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+
+                return StatusCode(500, ex.Message);
+            }
+
         }
 
         [Authorize]
