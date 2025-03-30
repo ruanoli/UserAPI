@@ -35,7 +35,7 @@ namespace UserAPI.Infra.Mappings
             builder.Property(x => x.Password)
                 .HasColumnName("PASSWORD")
                 .IsRequired()
-                .HasMaxLength(16);
+                .HasMaxLength(255);
 
             builder.Property(x => x.RegisterDate)
                 .HasColumnName("REGISTER_DATE")

@@ -1,0 +1,16 @@
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\bin\Debug\net8.0\UserAPI.Infrastructure.Messages.deps.json
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\bin\Debug\net8.0\UserAPI.Infrastructure.Messages.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\bin\Debug\net8.0\UserAPI.Infrastructure.Messages.pdb
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\bin\Debug\net8.0\UserAPI.Domain.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\bin\Debug\net8.0\UserAPI.Domain.pdb
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.csproj.AssemblyReference.cache
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.AssemblyInfoInputs.cache
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.AssemblyInfo.cs
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.csproj.CoreCompileInputs.cache
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.sourcelink.json
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI..F4EB7398.Up2Date
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\refint\UserAPI.Infrastructure.Messages.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\UserAPI.Infrastructure.Messages.pdb
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Infrastructure.Messages\obj\Debug\net8.0\ref\UserAPI.Infrastructure.Messages.dll

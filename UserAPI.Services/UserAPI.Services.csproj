@@ -23,6 +23,7 @@
   <ItemGroup>
     <ProjectReference Include="..\UserAPI.Application\UserAPI.Application.csproj" />
     <ProjectReference Include="..\UserAPI.Domain\UserAPI.Domain.csproj" />
+    <ProjectReference Include="..\UserAPI.Infrastructure.Messages\UserAPI.Infrastructure.Messages.csproj" />
     <ProjectReference Include="..\UserAPI.Infra\UserAPI.Infra.csproj" />
   </ItemGroup>
 

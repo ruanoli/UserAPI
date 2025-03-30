@@ -8,6 +8,6 @@ namespace UserAPI.Domain.Exceptions
 {
     public class UserAlreadyRegistredException : Exception
     {
-        public override string Message => "Acesso já está cadastrado no sistema. Verifique o e-mail informado.";
+        public override string Message => "Usuário já está cadastrado no sistema. Verifique o e-mail informado.";
     }
 }

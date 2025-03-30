@@ -143,3 +143,8 @@ C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services
 C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\obj\Debug\net8.0\UserAPI.Services.pdb
 C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\obj\Debug\net8.0\UserAPI.Services.genruntimeconfig.cache
 C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\obj\Debug\net8.0\ref\UserAPI.Services.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\bin\Debug\net8.0\RabbitMQ.Client.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\bin\Debug\net8.0\RabbitMQ.Client.Core.DependencyInjection.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\bin\Debug\net8.0\UserAPI.Infrastructure.Messages.dll
+C:\Users\ruan1\OneDrive\Área de Trabalho\Projetos\APIs\UserAPI\UserAPI.Services\bin\Debug\net8.0\UserAPI.Infrastructure.Messages.pdb

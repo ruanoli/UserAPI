@@ -38,7 +38,6 @@ namespace UserAPI.Services.Controllers
         {
             try
             {
-
                 var response = _userAppService.CreateAccount(model);
 
                 return StatusCode(200, response);

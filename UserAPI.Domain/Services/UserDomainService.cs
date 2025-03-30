@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using UserAPI.Domain.Entities;
 using UserAPI.Domain.Exceptions;
 using UserAPI.Domain.Helpers;
+using UserAPI.Domain.Interfaces.Messages;
 using UserAPI.Domain.Interfaces.Repositories;
 using UserAPI.Domain.Interfaces.Services;
 
@@ -14,10 +15,12 @@ namespace UserAPI.Domain.Services
     public class UserDomainService : IUserDomainService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IUserMessage _userMessage;
 
-        public UserDomainService(IUserRepository userRepository)
+        public UserDomainService(IUserRepository userRepository, IUserMessage userMessage)
         {
             _userRepository = userRepository;
+            _userMessage = userMessage;
         }
 
         public void CreateUser(User user)
@@ -48,7 +51,8 @@ namespace UserAPI.Domain.Services
             if(user == null)
                 throw new UserNotFoundException();
 
-            //TODO: Enviar email recuperação de senha para o usuário
+            //notificação de recuperação de senha para a mensageria
+            _userMessage.SendPasswordRecoveryMessage(user);
 
             return user;
         }
